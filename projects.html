@@ -6,6 +6,13 @@
     <title>Projects - Jacob Benigeri</title>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
+        :root {
+            --psg-navy: #004170;
+            --psg-red: #DA291C;
+            --psg-white: #ffffff;
+            --psg-navy-light: #00527a;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -15,16 +22,18 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             line-height: 1.6;
-            color: #2c3e50;
+            color: var(--psg-navy);
             max-width: 860px;
             margin: 0 auto;
             padding: 2rem;
-            background-color: #fff;
+            background-color: var(--psg-white);
         }
 
         nav {
             margin-bottom: 2rem;
             text-align: center;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid var(--psg-navy);
         }
 
         nav ul {
@@ -46,13 +55,15 @@
 
         nav a {
             text-decoration: none;
-            color: #2c3e50;
-            font-weight: 400;
+            color: var(--psg-navy);
+            font-weight: 500;
             font-size: 1.1rem;
+            transition: color 0.2s ease;
+            border-bottom: none;
         }
 
         nav a:hover {
-            color: #666;
+            color: var(--psg-red);
         }
 
         /* Markdown content styling */
@@ -64,14 +75,21 @@
             font-size: 2.5rem;
             margin-bottom: 1.5rem;
             font-weight: 600;
-            color: #1a1a1a;
+            color: var(--psg-navy);
         }
 
         #content h2 {
             font-size: 1.8rem;
             margin: 1.5rem 0 0.5rem;
             font-weight: 500;
-            color: #1a1a1a;
+            color: var(--psg-navy);
+        }
+
+        #content h3 {
+            font-size: 1.3rem;
+            margin: 1.2rem 0 0.5rem;
+            font-weight: 500;
+            color: var(--psg-red);
         }
 
         #content p {
@@ -97,17 +115,34 @@
             content: none;
         }
 
+        #content hr {
+            border: none;
+            border-top: 2px solid var(--psg-navy);
+            margin: 2rem 0;
+        }
+
+        #content img {
+            border: 2px solid var(--psg-navy);
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+
+        #content img:hover {
+            border-color: var(--psg-red);
+            box-shadow: 0 4px 8px rgba(0, 65, 112, 0.2);
+        }
+
         /* Links */
         #content a {
-            color: #000080;
+            color: var(--psg-red);
             text-decoration: none;
-            border-bottom: 1px solid rgba(0, 0, 128, 0.2);
+            border-bottom: 1px solid rgba(218, 41, 28, 0.3);
             transition: all 0.2s ease;
         }
 
         #content a:hover {
-            color: #000066;
-            border-bottom-color: #000066;
+            color: var(--psg-navy);
+            border-bottom-color: var(--psg-navy);
         }
 
         @media (max-width: 768px) {
@@ -152,4 +187,3 @@
     </script>
 </body>
 </html>
-
