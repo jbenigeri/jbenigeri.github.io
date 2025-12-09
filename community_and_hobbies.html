@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Jacob Benigeri</title>
+    <title>Community & Hobbies - Jacob Benigeri</title>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
         :root {
@@ -65,6 +65,7 @@
 
         nav a:hover {
             color: var(--psg-red);
+            border-bottom: none;
         }
 
         /* Markdown content styling */
@@ -98,6 +99,10 @@
             font-size: 1.1rem;
         }
 
+        #content strong {
+            color: var(--psg-red);
+        }
+
         #content ul {
             list-style: none;
             margin: 0 0 0.75rem 0;
@@ -122,15 +127,8 @@
             margin: 2rem 0;
         }
 
-        #content img {
-            border: 2px solid var(--psg-navy);
-            border-radius: 4px;
-            transition: all 0.2s ease;
-        }
-
-        #content img:hover {
-            border-color: var(--psg-red);
-            box-shadow: 0 4px 8px rgba(0, 65, 112, 0.2);
+        #content em {
+            color: #666;
         }
 
         /* Links */
@@ -176,7 +174,7 @@
         // Function to fetch and render markdown content
         async function loadMarkdownContent() {
             try {
-                const response = await fetch('projects.md');
+                const response = await fetch('community_and_hobbies.md');
                 const markdown = await response.text();
                 document.getElementById('content').innerHTML = marked.parse(markdown);
             } catch (error) {
