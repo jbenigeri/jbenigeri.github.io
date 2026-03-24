@@ -17,8 +17,12 @@ I started the Jazz Band at the British School of Paris, bringing together studen
 I also played alto saxophone with the jazz band at [IMEP Paris College of Music](https://www.imep.pro/en/), a jazz and modern music school in Paris. Here are two clips from a live performance at L'Entrepôt:
 
 <div class="video-embed">
-<iframe src="https://www.youtube.com/embed/I4AJnZWF9J4" title="IMEP Jazz Band at L'Entrepôt, Paris" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/bowaVJliDH8" title="IMEP Jazz Band at L'Entrepôt, Paris" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+<!-- <div class="video-embed">
+<iframe src="https://www.youtube.com/embed/I4AJnZWF9J4" title="IMEP Jazz Band at L'Entrepôt, Paris" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div> -->
 
 <div class="video-embed">
 <iframe src="https://www.youtube.com/embed/7CihTu342T8" title="IMEP Jazz Band at L'Entrepôt, Paris" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
