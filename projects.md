@@ -42,9 +42,11 @@ A demo of my own version of Zoom's hand gesture detection feature: **real-time d
   <img src="images/demo.gif" alt="Hand Gesture Recognition Demo" width="600">
 </a>
 
-I started with a rules-based system using [MediaPipe Hands](https://github.com/google-ai-edge/mediapipe/blob/master/docs/solutions/hands.md) landmark detection, which worked for distinct gestures like thumbs-up but confused similar hand positions (e.g. peace sign vs. the number two). So I built a data collection tool, recorded labeled video clips across varying hand positions, distances, and lighting conditions, and trained a Random Forest classifier on the landmark data. The model achieves 98.9% accuracy across all 9 hand gesture classes on my dataset. The Streamlit UI provides a live webcam feed, gesture toggle controls, and a statistics dashboard.
+I started with a rules-based approach: [MediaPipe](https://github.com/google-ai-edge/mediapipe/blob/master/docs/solutions/hands.md) tracks 21 points on your hand, and simple rules check the geometry between them. For example, "thumb tip is above the thumb base and all other fingers are curled" reliably detects a thumbs-up. But rules struggle with ambiguous gestures. An OK sign 👌 requires the thumb and index finger to be "close enough" to form a circle, and a fixed distance threshold breaks when someone is farther from the camera or forms the gesture loosely.
 
-Built with the help of LLM coding assistants, but many key decisions, like when to abandon rules for machine learning, were mine.
+So I built a data collection tool, recorded labeled samples across varying hand positions, distances, and lighting, and trained a Random Forest classifier that learns to handle that variability from examples instead of hard-coded rules—achieving 98.9% accuracy across all 9 gesture classes. The Streamlit UI provides a live webcam feed, gesture toggle controls, and a statistics dashboard.
+
+LLM coding assistants helped me build fast, but many of the key design decisions were mine. For example, it was my call to drop the rules and switch to ML when I found them to be unreliable.
 
 [GitHub](https://github.com/jbenigeri/Hand-Gestures-Detection)
 
