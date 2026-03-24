@@ -22,15 +22,17 @@ Cleaned and merged Steam sales data with Eurostat HICP indices, filtered to 2015
 
 Adjusted prices using HICP to compare real versus nominal trends over time, and used statistical modeling to measure how pricing shifted across periods. Covers COVID-19 impact analysis (2020–2022), price tier composition over time, and psychological price point patterns.
 
+<div class="image-row">
 <a href="https://jbenigeri.github.io/Video-Game-Price-Analysis/nb2-prices-analysis/">
-  <img src="images/sec_5-1_tier_composition.png" alt="Tier Composition" width="300">
+  <img src="images/sec_5-1_tier_composition.png" alt="Tier Composition">
 </a>
 <a href="https://jbenigeri.github.io/Video-Game-Price-Analysis/nb2-prices-analysis/">
-  <img src="images/sec_5-2_price_evolution.png" alt="Price Evolution" width="300">
+  <img src="images/sec_5-2_price_evolution.png" alt="Price Evolution">
 </a>
 <a href="https://jbenigeri.github.io/Video-Game-Price-Analysis/nb2-prices-analysis/">
-  <img src="images/sec_5-3_covid_impact.png" alt="COVID Impact" width="300">
+  <img src="images/sec_5-3_covid_impact.png" alt="COVID Impact">
 </a>
+</div>
 
 ---
 
