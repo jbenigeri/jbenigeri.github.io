@@ -65,14 +65,12 @@
 
         /* Main content */
         .main-content {
-            display: flex;
-            gap: 4rem;
             margin: 2rem 0;
-            align-items: flex-start;
+            text-align: center;
         }
 
         .text-content {
-            flex: 1;
+            text-align: left;
         }
 
         h1 {
@@ -80,6 +78,7 @@
             margin-bottom: 1.5rem;
             font-weight: 600;
             color: var(--psg-navy);
+            text-align: center;
         }
 
         p {
@@ -95,6 +94,8 @@
             border-radius: 8px;
             object-fit: cover;
             border: 3px solid var(--psg-navy);
+            display: block;
+            margin: 0 auto 2rem;
         }
 
         /* Contact links */
@@ -150,12 +151,6 @@
                 padding: 1.5rem;
             }
 
-            .main-content {
-                flex-direction: column-reverse;
-                align-items: center;
-                gap: 2rem;
-            }
-
             .profile-image {
                 width: 240px;
                 height: 240px;
@@ -192,28 +187,27 @@
     </nav>
 
     <div class="main-content">
+        <h1>Jacob Benigeri</h1>
+        <img src="images/profile.jpg" alt="Jacob Benigeri" class="profile-image">
         <div class="text-content">
-            <h1>Jacob Benigeri</h1>
             <p>I am a Business Intelligence Analyst at <a href="https://riskonnect.com/">Riskonnect</a>, where I have spent three and a half years building analytics tools for insurance companies. I manage over 100 client cases per year, turning raw data into dashboards and reports that support client decision-making across SQL, Power BI, Cognos, and Tableau. I hold a BS in Economics from the University of Chicago, where I learned to use statistical analysis and data to frame problems and make evidence-based decisions.</p>
 
             <p>Outside of work, I <a href="projects.html">build projects</a> to develop my technical skills. I used Python to analyze whether video game prices in the European market have kept pace with inflation, cleaning and merging Steam sales data with Eurostat HICP indices, building a methodology to compare real versus nominal prices, and publishing the analysis as interactive notebooks on GitHub. More recently, I experimented with LLM coding assistants and built my own demo of Zoom's hand gesture recognition feature, starting with rules-based landmark detection and training a random forest classifier to handle harder cases.</p>
 
             <p>My goal is to pursue a master's degree to build at the intersection of AI, data systems, and human decision-making.</p>
-
-            <ul class="contact-links">
-                <li>📧 <a href="mailto:jbenigeri@icloud.com">jbenigeri@icloud.com</a></li>
-                <li>👨‍💻 <a href="https://github.com/jbenigeri">github.com/jbenigeri</a></li>
-                <li>📍 Chicago, IL & Paris, France</li>
-            </ul>
-            <a href="Jacob_Benigeri_Resume_122025.pdf" class="download-cv" download>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 16L7 11H10V4H14V11H17L12 16Z"/>
-                    <path d="M4 20V18H20V20H4Z"/>
-                </svg>
-                Download CV
-            </a>
         </div>
-        <img src="images/profile.jpg" alt="Jacob Benigeri" class="profile-image">
+        <ul class="contact-links">
+            <li>📧 <a href="mailto:jbenigeri@icloud.com">jbenigeri@icloud.com</a></li>
+            <li>👨‍💻 <a href="https://github.com/jbenigeri">github.com/jbenigeri</a></li>
+            <li>📍 Chicago, IL & Paris, France</li>
+        </ul>
+        <a href="Jacob_Benigeri_Resume_122025.pdf" class="download-cv" download>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 16L7 11H10V4H14V11H17L12 16Z"/>
+                <path d="M4 20V18H20V20H4Z"/>
+            </svg>
+            Download CV
+        </a>
     </div>
 </body>
 </html>
