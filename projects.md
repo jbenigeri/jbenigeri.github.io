@@ -38,6 +38,8 @@ Adjusted prices using HICP to compare real versus nominal trends over time, and 
 
 A demo of my own version of Zoom's hand gesture detection feature: **real-time detection of 9 common video call gestures (👍 👎 ✋ 👏 ✌️ 👌 👆 🤘 ✊) with emoji reactions displayed on screen.**
 
+[GitHub](https://github.com/jbenigeri/Hand-Gestures-Detection)
+
 <a href="https://github.com/jbenigeri/Hand-Gestures-Detection">
   <img src="images/demo.gif" alt="Hand Gesture Recognition Demo" width="600">
 </a>
@@ -47,8 +49,6 @@ I started with a rules-based approach: [MediaPipe](https://github.com/google-ai-
 So I built a data collection tool, recorded labeled samples across varying hand positions, distances, and lighting, and trained a Random Forest classifier that learns to handle that variability from examples instead of hard-coded rules—achieving 98.9% accuracy across all 9 gesture classes. The Streamlit UI provides a live webcam feed, gesture toggle controls, and a statistics dashboard.
 
 LLM coding assistants helped me build fast, but many of the key design decisions were mine. For example, it was my call to drop the rules and switch to ML when I found them to be unreliable.
-
-[GitHub](https://github.com/jbenigeri/Hand-Gestures-Detection)
 
 ---
 

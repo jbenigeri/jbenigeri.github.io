@@ -132,6 +132,8 @@
         }
 
         #content img {
+            display: block;
+            margin: 1rem auto;
             border: 2px solid var(--psg-navy);
             border-radius: 4px;
             transition: all 0.2s ease;
@@ -140,6 +142,11 @@
         #content img:hover {
             border-color: var(--psg-red);
             box-shadow: 0 4px 8px rgba(0, 65, 112, 0.2);
+        }
+
+        #content a:has(> img) {
+            display: block;
+            text-align: center;
         }
 
         /* Links */
