@@ -43,7 +43,7 @@ A demo of my own version of Zoom's hand gesture detection feature: **real-time d
 [GitHub](https://github.com/jbenigeri/Hand-Gestures-Detection)
 
 <a href="https://github.com/jbenigeri/Hand-Gestures-Detection">
-  <img src="images/demo.gif" alt="Hand Gesture Recognition Demo" width="600">
+  <img src="images/demo.gif" alt="Hand Gesture Recognition Demo">
 </a>
 
 I started with a rules-based approach: [MediaPipe](https://github.com/google-ai-edge/mediapipe/blob/master/docs/solutions/hands.md) tracks 21 points on your hand, and simple rules check the geometry between them. For example, "thumb tip is above the thumb base and all other fingers are curled" reliably detects a thumbs-up. But rules struggle with ambiguous gestures. An OK sign 👌 requires the thumb and index finger to be "close enough" to form a circle, and a fixed distance threshold breaks when someone is farther from the camera or forms the gesture loosely.
