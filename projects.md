@@ -44,7 +44,7 @@ A demo of my own version of Zoom's hand gesture recognition feature—real-time 
 
 I started with a rules-based system using [MediaPipe Hands](https://google.github.io/mediapipe/solutions/hands.html) landmark detection, which worked for distinct gestures like thumbs-up but confused similar hand positions (e.g. peace sign vs. the number two). So I built a data collection tool, recorded labeled video clips across varying hand positions, distances, and lighting conditions, and trained a Random Forest classifier on the landmark data—achieving 98.9% accuracy across all 9 gesture classes on my dataset. The Streamlit UI provides a live webcam feed, gesture toggle controls, and a statistics dashboard.
 
-Built with the help of LLM coding assistants, but the decisions that mattered—like when to abandon rules for machine learning—were mine.
+Built with the help of LLM coding assistants, but many key decisions, like when to abandon rules for machine learning, were mine.
 
 [GitHub](https://github.com/jbenigeri/Hand-Gestures-Detection)
 
