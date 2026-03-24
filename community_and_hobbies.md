@@ -12,7 +12,7 @@ I started the Jazz Band at the British School of Paris, bringing together studen
 </div>
 
 ### IMEP Paris College of Music
-**Musician**
+**Musician** | 2016–2018
 
 I also played alto saxophone with the jazz band at [IMEP Paris College of Music](https://www.imep.pro/en/), a jazz and modern music school in Paris. Here are two clips from a live performance at L'Entrepôt:
 
