@@ -34,15 +34,15 @@ Adjusted prices using HICP to compare real versus nominal trends over time, and 
 
 ---
 
-### Hand Gesture Recognition
+### Hand Gesture Detection
 
-A demo of my own version of Zoom's hand gesture recognition feature—real-time detection of 9 common video call gestures (👍 👎 ✋ 👏 ✌️ 👌 👆 🤘 ✊) with emoji reactions displayed on screen.
+A demo of my own version of Zoom's hand gesture detection feature: **real-time detection of 9 common video call gestures (👍 👎 ✋ 👏 ✌️ 👌 👆 🤘 ✊) with emoji reactions displayed on screen.**
 
 <a href="https://github.com/jbenigeri/Hand-Gestures-Detection">
   <img src="images/demo.gif" alt="Hand Gesture Recognition Demo" width="600">
 </a>
 
-I started with a rules-based system using [MediaPipe Hands](https://google.github.io/mediapipe/solutions/hands.html) landmark detection, which worked for distinct gestures like thumbs-up but confused similar hand positions (e.g. peace sign vs. the number two). So I built a data collection tool, recorded labeled video clips across varying hand positions, distances, and lighting conditions, and trained a Random Forest classifier on the landmark data—achieving 98.9% accuracy across all 9 gesture classes on my dataset. The Streamlit UI provides a live webcam feed, gesture toggle controls, and a statistics dashboard.
+I started with a rules-based system using [MediaPipe Hands](https://google.github.io/mediapipe/solutions/hands.html) landmark detection, which worked for distinct gestures like thumbs-up but confused similar hand positions (e.g. peace sign vs. the number two). So I built a data collection tool, recorded labeled video clips across varying hand positions, distances, and lighting conditions, and trained a Random Forest classifier on the landmark data. The model achieves 98.9% accuracy across all 9 hand gesture classes on my dataset. The Streamlit UI provides a live webcam feed, gesture toggle controls, and a statistics dashboard.
 
 Built with the help of LLM coding assistants, but many key decisions, like when to abandon rules for machine learning, were mine.
 
